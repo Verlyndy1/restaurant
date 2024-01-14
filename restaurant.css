@@ -1,0 +1,147 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #530505;
+    position: relative;
+}
+
+/* Header Styles */
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-image: url('https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg?size=626&ext=jpg');
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 200px;
+    z-index: 1;
+}
+
+header .nav{
+    position:absolute;
+    top: 30px;
+    left: 33%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Section Styles */
+
+.breakfast, .lunch, .dinner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.breakfast .food-item, .lunch .food-item, .dinner .food-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #b496aab9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 40px);
+    transition: transform 0.3s;
+}
+
+.breakfast .food-item img, .lunch .food-item img, .dinner .food-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.breakfast .food-item h2, .lunch .food-item h2, .dinner .food-item h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+/* Hover Effect */
+
+.breakfast .food-item:hover, .lunch .food-item:hover, .dinner .food-item:hover {
+    transform: scale(1.05);
+}
+
+a:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+header .arrow-list {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    left:15%;
+    bottom: 15px;
+    width: 1100px;
+    align-items: normal;
+}
+
+.arrow-list li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 70px 20px;
+    color: #fff;
+    
+}
+
+header .arrow-list ul{
+display: flex;
+}
+
+.arrow-list li:hover{
+    border-top: 2px solid burlywood;
+    text-emphasis-color: red;
+
+}
+
+/* Add these styles to your task25.css file or include them in a style block in the head of your HTML document */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #1d1b1b;
+}
